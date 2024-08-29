@@ -12,40 +12,297 @@
 
 <body>
     <header class="header">
-        <nav class="nav"></nav>
+        <nav class="nav">
+            <div class="nav__start">
+                <a href="#" class="nav__logo"><img src="images/logo2.png" alt="logo"></a>
+            </div>
+            <div class="nav__end">
+                <div class="nav__links">
+                    <a class="nav__link" href="#">о проекте</a>
+                    <a class="nav__link" href="#">контакты</a>
+                </div>
+                <button class="nav__button">Добавить объявление</button>
+            </div>
+        </nav>
     </header>
     <main class="main">
+        <section class="section--banner">
+            <h1 class="visually--hidden"></h1>
+            <div class="container">
+                <div class="banner">
+                    <p class="banner__info--one">Телефоны для вызова эвакуатора в <span>Москве</span></p>
+                </div>
+            </div>
+        </section>
         <section class="section">
+            <h1 class="visually--hidden"></h1>
+            <div class="container">
+                <div class="cards">
+                    <article class="card">
+                        <div class="card__title">Эвакуатор</div>
+                        <div class="card__advertisement">
+                            <div class="card__image--car"><img src="images/photo1.png" alt="car"></div>
+                            <div class="card__infos">
+                                <div class="card__info">
+                                    <p class="card__name">Легковой автомобиль</p>
+                                    <p class="card__price">5 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Мотоцикл (крадроцикл и т.д.)</p>
+                                    <p class="card__price">3 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Внедорожник</p>
+                                    <p class="card__price">нет</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Микроавтобус</p>
+                                    <p class="card__price">нет</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Загородный тариф</p>
+                                    <p class="card__price">50 руб/км</p>
+                                </div>
+                            </div>
+                            <div class="card__info--additionally">
+                                <div class="card__buttons">
+                                    <button class="card__button--number"><img class="card__image" src="images/call.png"
+                                            alt="call">+7 999 99
+                                        99</button>
+                                    <button class="card__button--number"><img class="card__image" src="images/call2.png"
+                                            alt="call">+7 999
+                                        99 99</button>
+                                </div>
+                                <div class="card__place">
+                                    <p class="card__place--paragraph--one"><img class="card__image"
+                                            src="images/location.png" alt="location">Место стоянки</p>
+                                    <p class="card__place--paragraph--two">Москва, ул Пушкина</p>
+                                </div>
+                                <button class="card__button--advertisement">
+                                    <p class="card__button--paragraph--one">ID объявления 63</p>
+                                    <p class="card__button--paragraph--two">Заказать рекламу</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card__title--bottom">Эвакуатор авто. Всегда на связи! Быстро и надежно</div>
+                    </article>
+                    <article class="card">
+                        <div class="card__title">Эвакуатор</div>
+                        <div class="card__advertisement">
+                            <div class="card__image--car"><img src="images/photo2.png" alt="car"></div>
+                            <div class="card__infos">
+                                <div class="card__info">
+                                    <p class="card__name">Легковой автомобиль</p>
+                                    <p class="card__price">4 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Мотоцикл (крадроцикл и т.д.)</p>
+                                    <p class="card__price">3 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Внедорожник</p>
+                                    <p class="card__price">4 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Микроавтобус</p>
+                                    <p class="card__price">6 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Загородный тариф</p>
+                                    <p class="card__price">50 руб/км</p>
+                                </div>
+                            </div>
+                            <div class="card__info--additionally">
+                                <div class="card__buttons">
+                                    <button class="card__button--number"><img class="card__image" src="images/call.png"
+                                            alt="call">+7 999 99
+                                        99</button>
+                                    <button class="card__button--number"><img class="card__image" src="images/call2.png"
+                                            alt="call">+7 999
+                                        99 99</button>
+                                </div>
+                                <div class="card__place">
+                                    <p class="card__place--paragraph--one"><img class="card__image"
+                                            src="images/location.png" alt="location">Место стоянки</p>
+                                    <p class="card__place--paragraph--two">Москва, ул Пушкина</p>
+                                </div>
+                                <button class="card__button--advertisement">
+                                    <p class="card__button--paragraph--one">ID объявления 63</p>
+                                    <p class="card__button--paragraph--two">Заказать рекламу</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card__title--bottom">Круглосуточно. Стоянка в районе метро Технопарк, быстро
+                            доберусь в любую точку города.</div>
+                    </article>
+                    <article class="card">
+                        <div class="card__title">Эвакуатор</div>
+                        <div class="card__advertisement">
+                            <div class="card__image--car"><img src="images/photo1.png" alt="car"></div>
+                            <div class="card__infos">
+                                <div class="card__info">
+                                    <p class="card__name">Легковой автомобиль</p>
+                                    <p class="card__price">5 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Мотоцикл (крадроцикл и т.д.)</p>
+                                    <p class="card__price">3 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Внедорожник</p>
+                                    <p class="card__price">нет</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Микроавтобус</p>
+                                    <p class="card__price">нет</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Загородный тариф</p>
+                                    <p class="card__price">50 руб/км</p>
+                                </div>
+                            </div>
+                            <div class="card__info--additionally">
+                                <div class="card__buttons">
+                                    <button class="card__button--number"><img class="card__image" src="images/call.png"
+                                            alt="call">+7 999 99
+                                        99</button>
+                                    <button class="card__button--number"><img class="card__image" src="images/call2.png"
+                                            alt="call">+7 999
+                                        99 99</button>
+                                </div>
+                                <div class="card__place">
+                                    <p class="card__place--paragraph--one"><img class="card__image"
+                                            src="images/location.png" alt="location">Место стоянки</p>
+                                    <p class="card__place--paragraph--two">Москва, ул Пушкина</p>
+                                </div>
+                                <button class="card__button--advertisement">
+                                    <p class="card__button--paragraph--one">ID объявления 63</p>
+                                    <p class="card__button--paragraph--two">Заказать рекламу</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card__title--bottom">Эвакуатор авто. Всегда на связи! Быстро и надежно</div>
+                    </article>
+                    <article class="card">
+                        <div class="card__title">Эвакуатор</div>
+                        <div class="card__advertisement">
+                            <div class="card__image--car"><img src="images/photo2.png" alt="car"></div>
+                            <div class="card__infos">
+                                <div class="card__info">
+                                    <p class="card__name">Легковой автомобиль</p>
+                                    <p class="card__price">4 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Мотоцикл (крадроцикл и т.д.)</p>
+                                    <p class="card__price">3 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Внедорожник</p>
+                                    <p class="card__price">4 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Микроавтобус</p>
+                                    <p class="card__price">6 000 руб</p>
+                                </div>
+                                <div class="card__info">
+                                    <p class="card__name">Загородный тариф</p>
+                                    <p class="card__price">50 руб/км</p>
+                                </div>
+                            </div>
+                            <div class="card__info--additionally">
+                                <div class="card__buttons">
+                                    <button class="card__button--number"><img class="card__image" src="images/call.png"
+                                            alt="call">+7 999 99
+                                        99</button>
+                                    <button class="card__button--number"><img class="card__image" src="images/call2.png"
+                                            alt="call">+7 999
+                                        99 99</button>
+                                </div>
+                                <div class="card__place">
+                                    <p class="card__place--paragraph--one"><img class="card__image"
+                                            src="images/location.png" alt="location">Место стоянки</p>
+                                    <p class="card__place--paragraph--two">Москва, ул Пушкина</p>
+                                </div>
+                                <button class="card__button--advertisement">
+                                    <p class="card__button--paragraph--one">ID объявления 63</p>
+                                    <p class="card__button--paragraph--two">Заказать рекламу</p>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="card__title--bottom">Круглосуточно. Стоянка в районе метро Технопарк, быстро
+                            доберусь в любую точку города.</div>
+                    </article>
+                </div>
+                <ul class="navpage">
+                    <li class="navpage__li"><a class="navpage__link" href="#">1</a></li>
+                    <li class="navpage__li"><a class="navpage__link" href="#">2</a></li>
+                    <li class="navpage__li"><a class="navpage__link" href="#">3</a></li>
+                    <li class="navpage__li"><a class="navpage__link" href="#">4</a></li>
+                    <li class="navpage__li--arrow"><a class="navpage__link--arrow" href="#"><img src="images/arrow.png"
+                                alt="arrow"></a></li>
+                </ul>
+            </div>
+        </section>
+        <section class="section--banner">
+            <h1 class="visually--hidden"></h1>
+            <div class="banner">
+                <img class="banner__image" src="images/illustration.png" alt="car">
+                <p class="banner__info--two">Здесь может быть ваш эвакуатор</p>
+                <button class="nav__button banner__button">Добавить объявление</button>
+            </div>
+        </section>
+        <section class="section">
+            <h1 class="visually--hidden"></h1>
+            <div class="container">
+                <div class="info__containers">
+                    <div class="info__container">
+                        <div class="info__title">Как вызвать эвакуатор в Москве
+                            дешево?</div>
+                        <div class="info__paragraphs">
+                            <p class="info__paragraph">Поломка авто или ДТП – случайностей на дороге много.  Решение одно
+                                – вызвать эвакуатор
+                                и доставить неисправный автомобиль на СТО/парковку или в гараж в Москве.
+                                С помощью онлайн-сервиса Эварус вы сможете заказать услугу эвакуатора в Москве
+                                (Московской области) максимально быстро
+                                и при этом сэкономить.</p>
+                            <p class="info__paragraph">Мы предоставляем доступ к базе коммерческих
+                                и частных эвакуаторов Москвы. Это надежные компании, которые оперативно пришлют
+                                спецтехнику вам на помощь и обеспечат безопасную транспортировку авто.</p>
+                        </div>
+                    </div>
+                    <div class="info__container--image"><img src="images/men1.png" alt="men"></div>
+                </div>
+            </div>
+        </section>
+        <section class="section--brown">
+            <h1 class="visually--hidden"></h1>
+            <div class="container">
+                <div class="info__order">
+                    <div class="info__order--title">Что нужно знать, чтобы заказать эвакуатор в Москве</div>
+                </div>
+            </div>
+        </section>
+        <section class="section">
+            <h1 class="visually--hidden"></h1>
             <div class="container"></div>
         </section>
         <section class="section">
+            <h1 class="visually--hidden"></h1>
             <div class="container"></div>
         </section>
         <section class="section">
+            <h1 class="visually--hidden"></h1>
             <div class="container"></div>
         </section>
         <section class="section">
-            <div class="container"></div>
-        </section>
-        <section class="section">
-            <div class="container"></div>
-        </section>
-        <section class="section">
-            <div class="container"></div>
-        </section>
-        <section class="section">
-            <div class="container"></div>
-        </section>
-        <section class="section">
-            <div class="container"></div>
-        </section>
-        <section class="section">
+            <h1 class="visually--hidden"></h1>
             <div class="container"></div>
         </section>
     </main>
     <footer class="footer">
         <div class="container"></div>
     </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>

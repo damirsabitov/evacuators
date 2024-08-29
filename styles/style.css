@@ -28,7 +28,7 @@
 
 
 :root {
-    --container-max-width-medium: calc(1200px + (var(--container-padding-inline) * 2));
+    --container-max-width-medium: calc(1400px + (var(--container-padding-inline) * 2));
     --container-padding-inline: 16px;
     --main-blue: #0297d4;
     --dark: #131515;
@@ -42,8 +42,334 @@ body {
     overflow-x: hidden;
 }
 
+.section--banner {
+    background-image: url(../images/zadnikb.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.section--brown {
+    background-color: #fff5cc;
+}
+
 .container {
     max-width: var(--container-max-width-medium);
     padding-inline: var(--container-padding-inline);
     margin-inline: auto;
 }
+
+/* * nav */
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 100px;
+}
+
+.nav__start {}
+
+.nav__end {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 775px;
+    width: 100%;
+}
+
+.nav__links {
+    display: flex;
+    gap: 82px;
+}
+
+.nav__link {
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--dark);
+}
+
+.nav__button {
+    display: flex;
+    align-items: center;
+    border-radius: 50px;
+    padding: 16px 36px;
+    max-width: 335px;
+    max-height: 55px;
+    background: var(--main-blue);
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/* * banner */
+
+.banner {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 142px;
+}
+
+.banner__info--one {
+    font-weight: 700;
+    font-size: 50px;
+    color: #fff;
+    padding: 37px 0;
+}
+
+.banner__info--two {
+    display: flex;
+    align-items: center;
+    max-width: 669px;
+    font-weight: 700;
+    font-size: 40px;
+    color: #fff;
+    max-height: 46px;
+}
+
+.banner__info--one>span {
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: #6ad3ff;
+}
+
+/* * cards */
+
+.cards {
+    display: flex;
+    gap: 44px;
+    flex-direction: column;
+    margin-top: 94px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    border-radius: 20px;
+    padding: 40px 48px;
+    box-shadow: 2px 2px 10px 2px rgba(39, 52, 58, 0.15);
+}
+
+.card__advertisement {
+    display: flex;
+    gap: 28px;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.card__title {
+    font-weight: 700;
+    font-size: 32px;
+    color: var(--dark);
+}
+
+.card__title--bottom {
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--dark);
+}
+
+.card__infos {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 498px;
+    width: 100%;
+}
+
+.card__info {
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 16px 20px;
+    background-color: #f2f4f8;
+    max-height: 55px;
+}
+
+.card__name {
+    font-weight: 400;
+    font-size: 20px;
+    color: #777;
+}
+
+.card__price {
+    font-weight: 700;
+    font-size: 20px;
+    color: #777;
+}
+
+.card__info--additionally {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    max-width: 335px;
+    width: 100%;
+}
+
+.card__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.card__place--paragraph {
+    display: flex;
+}
+
+.card__button--number {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-radius: 50px;
+    padding: 16px 36px;
+    justify-content: center;
+    max-height: 56px;
+    background-color: var(--main-blue);
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.card__image {
+    width: 24px;
+    height: 24px;
+}
+
+.card__place {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    border-radius: 10px;
+    padding: 16px 20px;
+    background-color: #fff5cc;
+}
+
+.card__place--paragraph--one {
+    display: flex;
+    gap: 4px;
+    font-weight: 400;
+    font-size: 20px;
+    color: #777;
+    align-items: center;
+}
+
+.card__place--paragraph--two {
+    font-weight: 400;
+    font-size: 20px;
+    color: #1b1e1f;
+}
+
+.card__button--advertisement {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    gap: 4px;
+    border: 1px solid var(--main-blue);
+    border-radius: 50px;
+    padding: 16px 36px;
+    max-height: 68px;
+}
+
+.card__button--paragraph--one {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
+    color: var(--main-blue);
+}
+
+.card__button--paragraph--two {
+    font-weight: 400;
+    font-size: 16px;
+    text-decoration: underline;
+    text-decoration-skip-ink: none;
+    color: var(--main-blue);
+}
+
+/* ----- */
+
+.navpage {
+    display: flex;
+    gap: 18px;
+    width: 100%;
+    justify-content: center;
+    margin-top: 68px;
+}
+
+.navpage__li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid var(--main-blue);
+    border-radius: 6px;
+    padding: 10px;
+    background-color: #fff;
+    max-width: 52px;
+    width: 100%;
+    max-height: 52px;
+}
+
+.navpage__link {
+    font-weight: 700;
+    font-size: 26px;
+    text-transform: uppercase;
+    text-align: center;
+    color: var(--main-blue);
+}
+
+.navpage__link.active {
+    color: #fff;
+
+}
+
+.navpage__li.active {
+    border: none;
+    background-color: var(--main-blue);
+}
+
+/* * info */
+
+.info__containers {
+    display: flex;
+    margin-top: 100px;
+    margin-bottom: 104px;
+}
+
+.info__container {
+    display: flex;
+    flex-direction: column;
+    max-width: 698px;
+    max-height: 574px;
+}
+
+.info__container--image {
+    min-height: 611px;
+}
+
+.info__title {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--dark);
+    padding-bottom: 48px;
+}
+
+.info__paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+
+.info__paragraph {
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--dark);
+}
+
+/* * order */
