@@ -52,10 +52,26 @@ body {
     background-color: #fff5cc;
 }
 
+.section--grey {
+    background-color: #c3bfbf;
+}
+
 .container {
     max-width: var(--container-max-width-medium);
     padding-inline: var(--container-padding-inline);
     margin-inline: auto;
+}
+
+.titles {
+    font-weight: 700;
+    font-size: 40px;
+    color: var(--dark);
+}
+
+.paragraphs {
+    font-weight: 400;
+    font-size: 26px;
+    color: var(--dark);
 }
 
 /* * nav */
@@ -351,12 +367,12 @@ body {
 
 .info__container--image {
     min-height: 611px;
+    position: absolute;
+    right: 0;
+    transform: translate(-150px);
 }
 
 .info__title {
-    font-weight: 700;
-    font-size: 40px;
-    color: var(--dark);
     padding-bottom: 48px;
 }
 
@@ -366,10 +382,249 @@ body {
     gap: 28px;
 }
 
-.info__paragraph {
-    font-weight: 400;
-    font-size: 26px;
-    color: var(--dark);
+/* * order */
+
+.info__order {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 100px;
 }
 
-/* * order */
+.info__order--images {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1156px;
+    width: 100%;
+    padding-left: 166px;
+    padding-bottom: 32px;
+}
+
+.info__order--image {
+    width: 320px;
+    height: 290px;
+}
+
+.info__order--title {
+    padding-bottom: 40px;
+}
+
+.info__order--paragraphs {
+    display: flex;
+    gap: 40px;
+    padding-bottom: 100px;
+}
+
+.info__order--paragraph {
+    max-width: 680px;
+    min-height: 248px;
+}
+
+/* * price */
+
+.info__price {
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.info__price--title {
+    padding-bottom: 50px;
+}
+
+.info__price--paragraphs {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+
+.info__price--paragraph--weight {
+    font-weight: 700;
+    padding-bottom: 36px;
+}
+
+.info__price--cards {
+    display: flex;
+    gap: 24px;
+}
+
+.info__price--card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 332px;
+    width: 100%;
+    min-height: 344px;
+}
+
+.info__price--card--one {
+    background-image: url(../images/1.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info__price--card--two {
+    background-image: url(../images/2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info__price--card--three {
+    background-image: url(../images/3.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info__price--card--four {
+    background-image: url(../images/4.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.info__price--card--title {
+    max-width: 190px;
+    font-weight: 700;
+    font-size: 20px;
+    text-align: center;
+    color: #fff;
+    padding-top: 104px;
+    padding-bottom: 17px;
+}
+
+.info__price--card--paragraph {
+    max-width: 290px;
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #fff;
+    max-height: 147px;
+}
+
+/* * advantages */
+
+.info__container--advantages {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.info__advantages--title {
+    width: 100%;
+    padding-bottom: 50px;
+}
+
+.info__advantages--paragraphs {
+    max-width: 804px;
+}
+
+.info__advantages--paragraph--weight {
+    font-weight: 700px;
+    padding-top: 26px;
+    padding-bottom: 38px;
+}
+
+.info__advantages--paragraphs--done {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    max-width: 733px;
+    padding-bottom: 114px;
+}
+
+.info__advantages--paragraph--done {
+    display: flex;
+    align-items: stretch;
+    gap: 18px;
+}
+
+.info__advantages--image {
+    width: 32px;
+    height: 32px;
+}
+
+.info__advantages--image--men {
+    position: absolute;
+    padding-top: 80px;
+    right: 0;
+}
+
+/* ----- */
+
+.info__payment--cards {
+    display: flex;
+    gap: 32px;
+}
+
+.section--grey {}
+
+.info__payment--card {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    border-radius: 20px;
+    padding: 48px;
+    background-color: #fff5cc;
+    height: 900px;
+}
+
+.info__payment--card--one {
+    max-width: 684px;
+    max-height: 592px;
+}
+
+.info__payment--card--two {
+    max-width: 684px;
+    max-height: 548px;
+}
+
+.info__payment--paragraph {
+    font-size: 24px;
+}
+
+.info__payment--title {
+    font-weight: 700;
+}
+
+/* * weight */
+
+.info__weight {
+    padding-top: 101px;
+}
+
+.info__weight--slider {
+    position: relative;
+    overflow: hidden;
+}
+
+.info__weight--cards {
+    display: none; /* Hide all slides by default */
+}
+
+.info__weight--cards.active {
+    display: block; /* Show the active slide */
+}
+
+.info__weight--button {
+    cursor: pointer;
+}
+
+.info__weight--controls {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.info__weight--control {
+    width: 10px;
+    height: 10px;
+    background-color: gray;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.info__weight--control.active {
+    background-color: var(--main-blue); /* Active control indicator */
+}
+
+/* slider */
