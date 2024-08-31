@@ -1,0 +1,210 @@
+/* * banner */
+
+.banner--info {
+    margin-bottom: 40px;
+}
+
+/* * form */
+
+.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.form__title {
+    display: flex;
+    align-items: center;
+    margin-bottom: 60px;
+    gap: 8px;
+}
+
+.weight {
+    font-weight: 700;
+}
+
+.form__items {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 28px;
+}
+
+.form__item {
+    display: flex;
+    flex-direction: column;
+    max-width: 798px;
+    width: 100%;
+    gap: 12px;
+}
+
+.form__label {
+    font-weight: 400;
+    font-size: 22px;
+    color: #4a585e;
+}
+
+.form__input {
+    border: 0.50px solid var(--main-blue);
+    border-radius: 10px;
+    padding: 11px 24px 12px 24px;
+}
+
+.three {
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.form__group--one {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    max-width: 900px;
+    width: 100%;
+}
+
+.city {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.city::-webkit-calendar-picker-indicator {
+    color: var(--main-blue);
+    /* use a custom icon */
+    background-size: 20px 20px;
+    /* set the icon size */
+    background-position: center;
+    /* center the icon */
+    background-repeat: no-repeat;
+    /* prevent the icon from repeating */
+    stroke-width: 2px;
+    stroke: var(--main-blue);
+}
+
+.form__stroke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-top: 53px;
+    padding-bottom: 53px;
+    font-weight: 400;
+    font-size: 26px;
+    color: #4a585e;
+}
+
+.stroke {
+    stroke-width: 1px;
+    stroke: var(--main-blue);
+}
+
+.max {
+    min-height: 346px;
+    display: flex;
+    padding-bottom: 270px;
+}
+
+.form__input--sale {
+    max-width: 322px;
+    width: 100%;
+}
+
+.forms__input {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+}
+
+.form__input--name {
+    font-weight: 400;
+    font-size: 22px;
+    color: #4a585e;
+}
+
+.form__item--group {
+    max-width: 260px;
+    width: 100%;
+    padding-top: 25px;
+}
+
+.item__group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.form__fotos--group {
+    display: flex;
+    gap: 12px;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+.form__fotos--title {
+    font-weight: 400;
+    font-size: 22px;
+    color: #4a585e;
+}
+
+.form__fotos--button {
+    border: 2px solid var(--main-blue);
+    border-radius: 50px;
+    padding: 16px 36px;
+    max-width: 335px;
+    width: 100%;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--main-blue);
+}
+
+.form__agree--group {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+    max-width: 850px;
+    align-items: center;
+}
+
+.form__agree {
+    display: flex;
+}
+
+.form__agree>input {
+    background-color: var(--main-blue);
+    max-width: 24px;
+    width: 100%;
+    height: 24px;
+    margin-right: 12px;
+}
+
+.form__agree>label {
+    min-height: 75px;
+}
+
+.form__agree--button {
+    border-radius: 50px;
+    padding: 16px 36px;
+    background-color: var(--main-blue);
+    max-width: 355px;
+    width: 100%;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 84px;
+}
+
+.br__nav {
+    display: none;
+}
+
+@media (max-width: 467px) {
+    .br__nav {
+        display: block;
+    }
+}

@@ -55,3 +55,7 @@ document.addEventListener("DOMContentLoaded", function () {
     // Initialize the first slide
     showSlide(currentSlide);
 });
+
+function scrollToTop() {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+}

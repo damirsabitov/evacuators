@@ -12,6 +12,12 @@
 
 <body>
     <header class="header">
+        <section class="section">
+            <div class="arrow">
+                <a class="arrow__link" href="#" onclick="scrollToTop(); return false;"><img src="images/arrow__down.png"
+                        alt="arrow"></a>
+            </div>
+        </section>
         <nav class="nav">
             <div class="nav__start">
                 <a href="#" class="nav__logo"><img src="images/logo2.png" alt="logo"></a>
@@ -21,7 +27,7 @@
                     <a class="nav__link" href="#">о проекте</a>
                     <a class="nav__link" href="#">контакты</a>
                 </div>
-                <button class="nav__button">Добавить объявление</button>
+                <a href="form.html" class="nav__button--link">Добавить объявление</a>
             </div>
         </nav>
     </header>
@@ -39,6 +45,7 @@
             <div class="container">
                 <div class="cards">
                     <article class="card">
+                        <h1 class="visually--hidden"></h1>
                         <div class="card__title">Эвакуатор</div>
                         <div class="card__advertisement">
                             <div class="card__image--car"><img src="images/photo1.png" alt="car"></div>
@@ -87,6 +94,7 @@
                         <div class="card__title--bottom">Эвакуатор авто. Всегда на связи! Быстро и надежно</div>
                     </article>
                     <article class="card">
+                        <h1 class="visually--hidden"></h1>
                         <div class="card__title">Эвакуатор</div>
                         <div class="card__advertisement">
                             <div class="card__image--car"><img src="images/photo2.png" alt="car"></div>
@@ -136,6 +144,7 @@
                             доберусь в любую точку города.</div>
                     </article>
                     <article class="card">
+                        <h1 class="visually--hidden"></h1>
                         <div class="card__title">Эвакуатор</div>
                         <div class="card__advertisement">
                             <div class="card__image--car"><img src="images/photo1.png" alt="car"></div>
@@ -184,6 +193,7 @@
                         <div class="card__title--bottom">Эвакуатор авто. Всегда на связи! Быстро и надежно</div>
                     </article>
                     <article class="card">
+                        <h1 class="visually--hidden"></h1>
                         <div class="card__title">Эвакуатор</div>
                         <div class="card__advertisement">
                             <div class="card__image--car"><img src="images/photo2.png" alt="car"></div>
@@ -234,10 +244,12 @@
                     </article>
                 </div>
                 <ul class="navpage">
-                    <li class="navpage__li"><a class="navpage__link" href="#">1</a></li>
-                    <li class="navpage__li"><a class="navpage__link" href="#">2</a></li>
-                    <li class="navpage__li"><a class="navpage__link" href="#">3</a></li>
-                    <li class="navpage__li"><a class="navpage__link" href="#">4</a></li>
+                    <div class="navpages__li">
+                        <li class="navpage__li"><a class="navpage__link" href="#">1</a></li>
+                        <li class="navpage__li"><a class="navpage__link" href="#">2</a></li>
+                        <li class="navpage__li"><a class="navpage__link" href="#">3</a></li>
+                        <li class="navpage__li"><a class="navpage__link" href="#">4</a></li>
+                    </div>
                     <li class="navpage__li--arrow"><a class="navpage__link--arrow" href="#"><img src="images/arrow.png"
                                 alt="arrow"></a></li>
                 </ul>
@@ -279,31 +291,33 @@
             <div class="container">
                 <div class="info__order">
                     <h2 class="info__order--title titles">Что нужно знать, чтобы заказать эвакуатор в Москве</h2>
-                      
-                        
 
-                        <div class="info__order--items">
-                            <div class="info__order--item">
-                                <img class="info__order--image" src="images/blueimg1.png" alt="car">
-                                <p class="info__order--paragraph paragraphs">Заказы на вызов эвакуатора в Москве
-                                    перевозчики-партнеры “Тут
-                                    Эвакуатор” принимают круглосуточно. Когда бы вы не позвонили, эвакуатор найдется всегда.
-                                    <br>
-                                    Размещая заказ <br>
-                                    на эвакуатор, ознакомьтесь с информацией
-                                    о транспортной компании, проконсультируйтесь
-                                    с ее специалистами и выберите оптимальный вариант перевозки своего ТС.
-                                </p>
-                            </div>
-                            <div class="info__order--item">
-                                <img class="info__order--image" src="images/blueimg2.png" alt="car">
-                                <p class="info__order--paragraph paragraphs">Примите во внимание, что одни и те же виды
-                                    эвакуаторов
-                                    рассчитаны на транспортировку авто разных классов. Вопрос заключается лишь в том, какой тип
-                                    эвакуатор будет выгоднее задействовать в вашем случае. Следуя рекомендациям перевозчика, вы
-                                    сможете недорого эвакуировать авто как в Москве, так и в области.</p>
-                            </div>
+
+
+                    <div class="info__order--items">
+                        <div class="info__order--item">
+                            <img class="info__order--image" src="images/blueimg1.png" alt="car">
+                            <p class="info__order--paragraph paragraphs">Заказы на вызов эвакуатора в Москве
+                                перевозчики-партнеры “Тут
+                                Эвакуатор” принимают круглосуточно. Когда бы вы не позвонили, эвакуатор найдется всегда.
+                                <br>
+                                Размещая заказ <br>
+                                на эвакуатор, ознакомьтесь с информацией
+                                о транспортной компании, проконсультируйтесь
+                                с ее специалистами и выберите оптимальный вариант перевозки своего ТС.
+                            </p>
                         </div>
+                        <div class="info__order--item">
+                            <img class="info__order--image" src="images/blueimg2.png" alt="car">
+                            <p class="info__order--paragraph paragraphs">Примите во внимание, что одни и те же виды
+                                эвакуаторов
+                                рассчитаны на транспортировку авто разных классов. Вопрос заключается лишь в том, какой
+                                тип
+                                эвакуатор будет выгоднее задействовать в вашем случае. Следуя рекомендациям перевозчика,
+                                вы
+                                сможете недорого эвакуировать авто как в Москве, так и в области.</p>
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -413,7 +427,8 @@
                             непосредственно
                             исполнителю – транспортной компании, взявшейся за перевозку вашего ТС. Оплата производится
                             по завершении эвакуации, после выгрузки авто в конечной точке в Москве.</p>
-                        <p class="info__payment--paragraph">Формы оплаты стандартные для Москвы: наличный/безналичный
+                        <p class="info__payment--paragraph paragraphs">Формы оплаты стандартные для Москвы:
+                            наличный/безналичный
                             расчет или банковский перевод. Эварус не взимает комиссионные с клиентов за пользование
                             сервисом.</p>
                     </div>
@@ -450,56 +465,68 @@
                                 ТутЭвакуатор.Ру:</p>
                         </div>
                         <div class="info__weight--cards slide1 active">
-                            <div class="info__weight--button prev"><img src="images/arrow2.png" alt="Previous"></div>
-                            <div class="info__weight--card">
-                                <h2 class="info__weight--card--title">
-                                    Эвакуатор с краном-манипулятором и прямой платформой
-                                </h2>
-                                <img class="info__weight--card--image" src="images/image6.png" alt="card">
-                                <p class="info__weight--card--paragraph paragraphs">Компактный и маневренный эвакуатор
-                                    для
-                                    транспортировки авто массой до 3,5 т. За счет вылета стрелы манипулятор осуществляет
-                                    погрузку/разгрузку ТС
-                                    с расстояния до 5 м. Он удобен для эвакуации автомобилей с узких улиц/дворов,
-                                    небольших стоянок/парковок Москвы.</p>
+                            <div class="info__weight--button prev"><img class="info__weight" src="images/arrow2.png"
+                                    alt="Previous"></div>
+                            <div class="info__weight--items">
+                                <div class="info__weight--card">
+                                    <h2 class="info__weight--card--title">
+                                        Эвакуатор с краном-манипулятором и прямой платформой
+                                    </h2>
+                                    <img class="info__weight--card--image" src="images/image6.png" alt="card">
+                                    <p class="info__weight--card--paragraph paragraphs">Компактный и маневренный
+                                        эвакуатор
+                                        для
+                                        транспортировки авто массой до 3,5 т. За счет вылета стрелы манипулятор
+                                        осуществляет
+                                        погрузку/разгрузку ТС
+                                        с расстояния до 5 м. Он удобен для эвакуации автомобилей с узких улиц/дворов,
+                                        небольших стоянок/парковок Москвы.</p>
+                                </div>
+                                <div class="info__weight--card">
+                                    <h2 class="info__weight--card--title">
+                                        Эвакуатор с манипулятором и ломаной / сдвижной платформой
+                                    </h2>
+                                    <img class="info__weight--card--image" src="images/image7.png" alt="card">
+                                    <p class="info__weight--card--paragraph paragraphs">Универсальный и надежный
+                                        эвакуатор
+                                        для
+                                        эвакуации любых видов транспортных средств, включая крупную
+                                        сельскохозяйственную/строительную/коммунальную технику, а также авто с низким
+                                        клиренсом. Этот тип эвакуатора может быть задействован при перевозке
+                                        как сильно пострадавших в аварии автомобилей, так и ТС, которые в состоянии
+                                        самостоятельно заехать на платформу эвакуатора.</p>
+                                </div>
                             </div>
-                            <div class="info__weight--card">
-                                <h2 class="info__weight--card--title">
-                                    Эвакуатор с манипулятором и ломаной / сдвижной платформой
-                                </h2>
-                                <img class="info__weight--card--image" src="images/image7.png" alt="card">
-                                <p class="info__weight--card--paragraph paragraphs">Универсальный и надежный эвакуатор
-                                    для
-                                    эвакуации любых видов транспортных средств, включая крупную
-                                    сельскохозяйственную/строительную/коммунальную технику, а также авто с низким
-                                    клиренсом. Этот тип эвакуатора может быть задействован при перевозке
-                                    как сильно пострадавших в аварии автомобилей, так и ТС, которые в состоянии
-                                    самостоятельно заехать на платформу эвакуатора.</p>
-                            </div>
-                            <div class="info__weight--button next"><img src="images/arrow3.png" alt="Next"></div>
+                            <div class="info__weight--button next"><img class="info__weight" src="images/arrow3.png"
+                                    alt="Next"></div>
                         </div>
                         <div class="info__weight--cards slide2">
-                            <div class="info__weight--button prev"><img src="images/arrow2.png" alt="Previous"></div>
-                            <div class="info__weight--card">
-                                <h2 class="info__weight--card--title">
-                                    Эвакуатор с лебедкой и платформой с аппарелями
-                                </h2>
-                                <img class="info__weight--card--image" src="images/image8.png"></img>
-                                <p class="info__weight--card--paragraph">Используется для перевозки ТС массой до 7 т.
-                                    Автомобиль затаскивают на платформу эвакуатора по направляющим при помощи
-                                    электрической/гидравлической/ручной лебедки. Эвакуатор данной модификации не
-                                    применяется для транспортировки авто с АКПП или заблокированными колесами.</p>
+                            <div class="info__weight--button prev"><img class="info__weight" src="images/arrow2.png"
+                                    alt="Previous"></div>
+                            <div class="info__weight--items">
+                                <div class="info__weight--card">
+                                    <h2 class="info__weight--card--title">
+                                        Эвакуатор с лебедкой и платформой с аппарелями
+                                    </h2>
+                                    <img class="info__weight--card--image" src="images/image8.png" alt="img"></img>
+                                    <p class="info__weight--card--paragraph">Используется для перевозки ТС массой до 7
+                                        т.
+                                        Автомобиль затаскивают на платформу эвакуатора по направляющим при помощи
+                                        электрической/гидравлической/ручной лебедки. Эвакуатор данной модификации не
+                                        применяется для транспортировки авто с АКПП или заблокированными колесами.</p>
+                                </div>
+                                <div class="info__weight--card">
+                                    <h2 class="info__weight--card--title">
+                                        Эвакуатор с лебедкой и укороченной базой для частичной погрузки авто
+                                    </h2>
+                                    <img class="info__weight--card--image" src="images/image9.png"></img>
+                                    <p class="info__weight--card--paragraph">Основное назначение – транспортировка
+                                        крупнотоннажной спецтехники, грузовых авто, автобусов.
+                                    </p>
+                                </div>
                             </div>
-                            <div class="info__weight--card">
-                                <h2 class="info__weight--card--title">
-                                    Эвакуатор с лебедкой и укороченной базой для частичной погрузки авто
-                                </h2>
-                                <img class="info__weight--card--image" src="images/image9.png"></img>
-                                <p class="info__weight--card--paragraph">Основное назначение – транспортировка
-                                    крупнотоннажной спецтехники, грузовых авто, автобусов.
-                                </p>
-                            </div>
-                            <div class="info__weight--button next"><img src="images/arrow3.png" alt="Next"></div>
+                            <div class="info__weight--button next"><img class="info__weigh" src="images/arrow3.png"
+                                    alt="Next"></div>
                         </div>
                         <div class="info__weight--controls">
                             <label class="info__weight--control" data-slide="1"></label>
@@ -582,8 +609,8 @@
             </div>
             <img class="section--info--img2" src="images/zadnik2.png" alt="img">
         </section>
-
         <section class="section">
+            <h1 class="visually--hidden"></h1>
             <div class="container">
                 <div class="pc-tab">
                     <input checked="checked" id="tab1" type="radio" name="pct" />
@@ -616,13 +643,17 @@
                                 </p>
                             </div>
                             <div class="tab__list--one">
-                                <p class="tab__list--paragraph"><img src="images/done.png" alt="done">класс, масса,
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done"
+                                        src="images/done.png" alt="done">класс, масса,
                                     степень повреждения транспортируемого авто</p>
-                                <p class="tab__list--paragraph"><img src="images/done.png" alt="done">первоначальное
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done"
+                                        src="images/done.png" alt="done">первоначальное
                                     месторасположение ТС в Москве и дальность следования</p>
-                                <p class="tab__list--paragraph"><img src="images/done.png" alt="done">сложность
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done"
+                                        src="images/done.png" alt="done">сложность
                                     погрузочно-разгрузочных операций</p>
-                                <p class="tab__list--paragraph"><img src="images/done.png" alt="done">дорожные и
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done"
+                                        src="images/done.png" alt="done">дорожные и
                                     погодные условия Москвы</p>
                             </div>
                             <div class="tab__paragraphs--two">
@@ -640,11 +671,14 @@
                                     прибытия эвакуатора к месту погрузки авто:</p>
                             </div>
                             <div class="tab__list--two">
-                                <p class="tab__list--paragraph"><img src="images/done.png" alt="done">простой эвакуатора
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done"
+                                        src="images/done.png" alt="done">простой эвакуатора
                                     по вине клиента</p>
-                                <p class="tab__list--paragraph"><img src="images/done.png" alt="done">смена маршрута
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done"
+                                        src="images/done.png" alt="done">смена маршрута
                                     после размещения заказа</p>
-                                <p class="tab__list--paragraph"><img src="images/done.png" alt="done">непредвиденное
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done"
+                                        src="images/done.png" alt="done">непредвиденное
                                     усложнение эвакуации из-за неправильных/неполных данных о ТС</p>
                             </div>
                             <p class="tab__list--footer paragraphs">Во избежание незапланированных трат, сообщите
@@ -664,21 +698,28 @@
                                     ТутЭвакуатор.Ру:</p>
                             </div>
                             <div class="tab__list--one">
-                                <p class="tab__list--paragraph"><img src="images/d1.png" alt="done">Ознакомьтесь с
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done" src="images/d1.png"
+                                        alt="done">Ознакомьтесь с
                                     картой Москвы и Московской области, на которой желтыми маркерами обозначены стоянки
                                     эвакуаторов.</p>
-                                <p class="tab__list--paragraph"><img src="images/d2.png" alt="done">Увеличьте масштаб и
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done" src="images/d2.png"
+                                        alt="done">Увеличьте масштаб и
                                     определите, какой из адресов находится рядом с местом вашей дислокации</p>
-                                <p class="tab__list--paragraph"><img src="images/d3.png" alt="done">Выберите ближайший
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done" src="images/d3.png"
+                                        alt="done">Выберите ближайший
                                     эвакуатор и нажмите на соответствующий маркер</p>
-                                <p class="tab__list--paragraph"><img src="images/d4.png" alt="done">Просмотрите
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done" src="images/d4.png"
+                                        alt="done">Просмотрите
                                     детальную информацию о перевозчике: возможные способы погрузки ТС, комплектацию
                                     автопарка, типы транспортируемых авто прайс с ценами</p>
-                                <p class="tab__list--paragraph"><img src="images/d5.png" alt="done">Кликните по голубому
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done" src="images/d5.png"
+                                        alt="done">Кликните по голубому
                                     полю внизу карточки перевозчика и возьмите телефонный номер компании</p>
-                                <p class="tab__list--paragraph"><img src="images/d6.png" alt="done">Созвонитесь с
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done" src="images/d6.png"
+                                        alt="done">Созвонитесь с
                                     диспетчером фирмы, обсудите детали эвакуации в Москве/МО и стоимость заказа</p>
-                                <p class="tab__list--paragraph"><img src="images/d7.png" alt="done">Сравните цены и
+                                <p class="tab__list--paragraph"><img class="tab__list--image--done" src="images/d7.png"
+                                        alt="done">Сравните цены и
                                     условия перевозки у нескольких компаний, выберите наиболее подходящий для себя
                                     вариант</p>
                             </div>
@@ -687,21 +728,22 @@
                 </div>
             </div>
         </section>
-        <footer class="footer">
-            <div class="container--max">
-                <div class="footer__items">
-                    <div class="footer__item--logo"><img src="images/logo2.png" alt="img"></div>
-                    <div class="footer__item--links">
-                            <a href="#" class="footer__link">Вызвать эвакуатор</a>
-                            <a href="#" class="footer__link">Добавить эвакуатор на сайт</a>
-                            <a href="#" class="footer__link">Помощь</a>
-                            <a href="#" class="footer__link">Правила оплаты</a>
-                            <a href="#" class="footer__link">Защита персональных данных</a>
-                    </div>
+    </main>
+    <footer class="footer">
+        <div class="container--max">
+            <div class="footer__items">
+                <div class="footer__item--logo"><img class="footer__item--logo" src="images/logo2.png" alt="img"></div>
+                <div class="footer__item--links">
+                    <a href="#" class="footer__link">Вызвать эвакуатор</a>
+                    <a href="#" class="footer__link">Добавить эвакуатор на сайт</a>
+                    <a href="#" class="footer__link">Помощь</a>
+                    <a href="#" class="footer__link">Правила оплаты</a>
+                    <a href="#" class="footer__link">Защита персональных данных</a>
                 </div>
             </div>
-        </footer>
-        <script src="js/main.js"></script>
+        </div>
+    </footer>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
